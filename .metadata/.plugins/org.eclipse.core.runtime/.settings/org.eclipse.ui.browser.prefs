@@ -1,0 +1,3 @@
+browsers=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<web-browsers current\="0">\r\n<system/>\r\n<external location\="C\:\\Program Files\\Internet Explorer\\iexplore.exe" name\="Internet Explorer"/>\r\n</web-browsers>
+eclipse.preferences.version=1
+internalWebBrowserHistory=http\://localhost\:8080/maven/hello/mvc|*|http\://localhost\:8080/maven/hello|*|http\://localhost\:8080/maven/|*|http\://localhost\:8080/mavenWAR/|*|http\://marketplace.eclipse.org/search/apachesolr_search/maven?mpc\=true&mpc_state\=|*|http\://localhost\:8080/spring/myMain|*|http\://localhost\:8080/spring/|*|http\://localhost\:8080/springWAR/|*|http\://localhost\:8080/spring/view/myMain|*|http\://localhost\:8080/spring/view/|*|http\://localhost\:8080/test/WEB-INF/classes/hello/Application.java|*|

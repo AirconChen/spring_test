@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;hello.package-info.java&apos; to &apos;SampleController.java&apos;&#x0D;&#x0A;- Original project: &apos;testWeb&apos;&#x0D;&#x0A;- Original element: &apos;hello.package-info.java&apos;&#x0D;&#x0A;- Renamed element: &apos;hello.SampleController.java&apos;" description="Rename compilation unit &apos;package-info.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/resources&lt;hello{package-info.java" name="SampleController.java" references="false" stamp="1443773869347" version="1.0"/>
+</session>

@@ -1,0 +1,33 @@
+package com.tutorialspoint;
+
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.stereotype.Controller;
+
+public class MainApp {
+	
+	@Controller
+	public test(){
+
+//		HelloWorld hw = new HelloWorld();
+//		hw.getMessage();
+		
+		
+		/**
+		 * 1.BeanFactory
+		 */
+		XmlBeanFactory factory = new XmlBeanFactory(new ClassPathResource("Beans.xml"));
+		HelloWorld obj = (HelloWorld) factory.getBean("helloWorld");
+		
+		
+		
+		/**
+		 * 2.ApplicationContext
+		 */
+//		ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+//		HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
+		
+		
+		obj.getMessage();
+	}
+}

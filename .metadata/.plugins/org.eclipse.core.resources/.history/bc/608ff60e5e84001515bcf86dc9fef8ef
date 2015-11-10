@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+	<aop:config>
+		<aop:aspect id="log" ref="logging">
+			<aop:pointcut id="myPointcut" expression="execution(* com.fpg.ec.aop.*.*(..))" />
+<!-- 			<aop:before pointcut-ref="myPointcut" method="beforeAdvice" /> -->
+<!-- 			<aop:after pointcut-ref="myPointcut" method="afterAdvice" /> -->
+<!-- 			<aop:around pointcut-ref="myPointcut" method="aroundAdvice" /> -->
+<!-- 			<aop:after-returning pointcut-ref="myPointcut" -->
+<!-- 				returning="retVal" method="afterReturningAdvice" /> -->
+<!-- 			<aop:after-throwing pointcut-ref="myPointcut" -->
+<!-- 				throwing="ex2" method="AfterThrowingAdvice" /> -->
+		</aop:aspect>
+	</aop:config>
+
+	<!-- Definition for student bean -->
+	<bean id="student" class="com.fpg.ec.aop.Student">
+		<property name="name" value="信璿" />
+		<property name="age" value="29" />
+	</bean>
+
+	<!-- Definition for logging aspect -->
+	<bean id="logging" class="com.fpg.ec.aop.Logging" />
+
+</beans>
